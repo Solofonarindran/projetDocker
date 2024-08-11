@@ -17,24 +17,24 @@
     @endsection
 
     @section('badge')
-        <sup class='badge badge-warning fw-800' style="letter-spacing:2px;font-size:12px">Année {{$annee->libelle}}</sup>
+        <sup class='badge badge-warning fw-800' style="letter-spacing:2px;font-size:12px">Année 2022-2023</sup>
     @endsection
 
     @section('headerDash')
            
             <div class="d-flex mr-4">
-                <div class="js-easy-pie-chart color-warning-500 position-relative d-inline-flex align-items-center justify-content-center" data-percent="@if($ressource == 0){{ $ressource }} @else{{number_format($charge/$ressource*100,2)}} @endif" data-piesize="105" data-linewidth="10" data-scalelength="5">
-                                    <div class="js-easy-pie-chart color-warning-400 position-relative position-absolute pos-left pos-right pos-top pos-bottom d-flex align-items-center justify-content-center" data-percent="@if($ressource==0){{0}} @else{{number_format($charge/$ressource*100,2)}}@endif" data-piesize="70" data-linewidth="5" data-scalelength="1" data-scalecolor="#fff">
-                                        <div class="position-absolute pos-top pos-left pos-right pos-bottom d-flex align-items-center justify-content-center fw-500 fs-xl text-dark">@if($ressource==0) {{0}} @else {{number_format($charge/$ressource*100,2)}} @endif%</div>
+                <div class="js-easy-pie-chart color-warning-500 position-relative d-inline-flex align-items-center justify-content-center" data-percent="34" data-piesize="105" data-linewidth="10" data-scalelength="5">
+                                    <div class="js-easy-pie-chart color-warning-400 position-relative position-absolute pos-left pos-right pos-top pos-bottom d-flex align-items-center justify-content-center" data-percent="45" data-piesize="70" data-linewidth="5" data-scalelength="1" data-scalecolor="#fff">
+                                        <div class="position-absolute pos-top pos-left pos-right pos-bottom d-flex align-items-center justify-content-center fw-500 fs-xl text-dark">45%</div>
                                     </div>
                </div>
                <label class="mb-0 mt-2 mt-md-0" style="font-weight:bold; letter-spacing:2px ; font-size:18px">Charges</label>
                
             </div>
             <div class="d-flex mr-4">
-               <div class="js-easy-pie-chart color-success-500 position-relative d-inline-flex align-items-center justify-content-center" data-percent="@if($ressource==0){{0}} @else{{number_format(($ressource-$charge)/$ressource*100,2)}}@endif" data-piesize="105" data-linewidth="10" data-scalelength="5">
-                                    <div class="js-easy-pie-chart color-success-400 position-relative position-absolute pos-left pos-right pos-top pos-bottom d-flex align-items-center justify-content-center" data-percent="@if($ressource==0){{0}} @else {{number_format(($ressource-$charge)/$ressource*100,2)}} @endif" data-piesize="70" data-linewidth="5" data-scalelength="1" data-scalecolor="#fff">
-                                        <div class="position-absolute pos-top pos-left pos-right pos-bottom d-flex align-items-center justify-content-center fw-500 fs-xl text-dark">@if($ressource==0){{0}} @else{{number_format(($ressource-$charge)/$ressource*100,2)}} @endif%</div>
+               <div class="js-easy-pie-chart color-success-500 position-relative d-inline-flex align-items-center justify-content-center" data-percent="34" data-piesize="105" data-linewidth="10" data-scalelength="5">
+                                    <div class="js-easy-pie-chart color-success-400 position-relative position-absolute pos-left pos-right pos-top pos-bottom d-flex align-items-center justify-content-center" data-percent="34" data-piesize="70" data-linewidth="5" data-scalelength="1" data-scalecolor="#fff">
+                                        <div class="position-absolute pos-top pos-left pos-right pos-bottom d-flex align-items-center justify-content-center fw-500 fs-xl text-dark">34%</div>
                                     </div>
                </div>
                <label class="mb-0 mt-2 mt-md-0" style="font-weight:bold; letter-spacing:2px ; font-size:18px">Marge</label>
@@ -48,7 +48,7 @@
                 <div class="p-3 bg-primary-300 rounded overflow-hidden position-relative text-white mb-g">
                     <div class="">
                         <h3 class="display-4 d-block l-h-n m-0 fw-500">
-                        <strong style="font-size:30px" class="fw-500">{{$effectif}}</strong>
+                        <strong style="font-size:30px" class="fw-500">234</strong>
                             <small class="m-0 l-h-n">Effectif des Elèves</small>
                         </h3>
                     </div>
@@ -59,7 +59,7 @@
                 <div class="p-3 bg-info-200 rounded overflow-hidden position-relative text-white mb-g">
                     <div class="">
                         <h3 class="display-4 d-block l-h-n m-0 fw-500">
-                        <strong style="font-size:30px" class="fw-500">{{$ressource}}</strong><sup>Ar</sup>
+                        <strong style="font-size:30px" class="fw-500">2300</strong><sup>Ar</sup>
                             <small class="m-0 l-h-n">Ressource</small>
                         </h3>
                     </div>
@@ -70,7 +70,7 @@
                 <div class="p-3 bg-warning-400 rounded overflow-hidden position-relative text-white mb-g">
                     <div class="">
                         <h3 class="display-4 d-block l-h-n m-0 fw-500">
-                        <strong style="font-size:30px" class="fw-500">{{$charge}}</strong><sup>Ar</sup>
+                        <strong style="font-size:30px" class="fw-500">3455</strong><sup>Ar</sup>
                             <small class="m-0 l-h-n">Charges (Dépenses)</small>
                         </h3>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="p-3 bg-success-200 rounded overflow-hidden position-relative text-white mb-g">
                     <div class="">
                         <h3 class="display-4 d-block l-h-n m-0">
-                            <strong style="font-size:30px" class="fw-500">{{$ressource-$charge}}</strong><sup>Ar</sup>
+                            <strong style="font-size:30px" class="fw-500">344</strong><sup>Ar</sup>
                             <small class="m-0 l-h-n">Marge Obtenue</small>
                         </h3>
                     </div>
@@ -91,24 +91,6 @@
            
         </div>
 
-
-
-        <?php
-            if($ressource==0){
-                $ecolageDetail=0.00;
-                $droitDetail=0.00;
-                $tm_friandiseDetail=0.00;
-                $participationDetail=0.00;
-
-            }else{
-                $ecolageDetail=number_format(($ressource-($arrayDetail['droit']+$arrayDetail['participation']+$arrayDetail['friandise']+$arrayDetail['tm']))/$ressource*100,2);
-                $droitDetail=number_format($arrayDetail['droit']/$ressource*100,2);
-                $tm_friandiseDetail=number_format(($arrayDetail['tm']+$arrayDetail['friandise'])/$ressource*100,2);
-                $participationDetail=number_format($arrayDetail['participation']/$ressource,2);
-            }
-            
-
-        ?>
 
 
         <div class="row">
@@ -130,7 +112,7 @@
                                         </div>
                                         <div>
                                             <label class="fs-sm mb-0">Droits</label>
-                                            <h4 class="font-weight-bold mb-0">{{$droitDetail}}%</h4>
+                                            <h4 class="font-weight-bold mb-0">23223%</h4>
                                         </div>
                                     </div>
                                     <div class="col-6 col-xl-3 d-sm-flex align-items-center">
@@ -141,7 +123,7 @@
                                       
                                         <div>
                                             <label class="fs-sm mb-0">Ecolage</label>
-                                            <h4 class="font-weight-bold mb-0">{{$ecolageDetail}}%</h4>
+                                            <h4 class="font-weight-bold mb-0">3353%</h4>
                                         </div>
                                     </div>
                                     <div class="col-6 col-xl-3 d-sm-flex align-items-center">
@@ -150,7 +132,7 @@
                                         </div>
                                         <div>
                                             <label class="fs-sm mb-0">T M + Friandise</label>
-                                            <h4 class="font-weight-bold mb-0">{{$tm_friandiseDetail}}%</h4>
+                                            <h4 class="font-weight-bold mb-0">32324%</h4>
                                         </div>
                                     </div>
                                     <div class="col-6 col-xl-3 d-sm-flex align-items-center">
@@ -159,7 +141,7 @@
                                         </div>
                                         <div>
                                             <label class="fs-sm mb-0">Participation</label>
-                                            <h4 class="font-weight-bold mb-0">{{$participationDetail}}%</h4>
+                                            <h4 class="font-weight-bold mb-0">43%</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -186,31 +168,7 @@
                        
                     </div>
 
-                    <?php
-                        if($effectif==0)
-                        {
-                            $tmPaiement=0.00;
-                            $ecolagePaiement=0.00;
-                            $friandisePaiement=0.00;
-                            $participationPaiement=0.00;
-
-                        }else{
-                            $tmPaiement=number_format($arrayNb['tmpaye']/$effectif*100,2);
-                            $ecolagePaiement=number_format($arrayNb['ecolagepaye']/($effectif*$annee->nb_mois)*100,2);
-    
-                            $friandisePaiement=number_format($arrayNb['friandisepaye']/$effectif*100,2);
-
-                            if($arrayNb['participationpayant']==0){
-                                $participationPaiement=0.00;
-                            }else{
-                                $participationPaiement=number_format($arrayNb['participationpaye']/$arrayNb['participationpayant']*100,2);
-                            }
-                           
-                            
-
-                        }
-                        
-                    ?>
+             
                     <div class="panel-container show">
                         <div class="panel-content position-relative">
                             <div class="pb-5 pt-3">
@@ -218,33 +176,33 @@
                                     <div class="col-md-6 col-lg-6 mr-lg-auto">
                                         
                                         <div class="d-flex mt-2 mb-1 text-warning" style="letter-spacing:2px;font-weight:bold">
-                                            Friandise ({{$friandisePaiement}}%)
+                                            Friandise (43%)
                                         </div>
                                         <div class="progress progress-xs mb-3">
-                                            <div class="progress-bar bg-warning-200" role="progressbar" style="width: {{$friandisePaiement}}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-warning-200" role="progressbar" style="width: 43%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <div class="d-flex mt-2 mb-1 text-info" style="letter-spacing:2px;font-weight:bold">
-                                            Ecolage ({{$ecolagePaiement}}%)
+                                            Ecolage (12%)
                                         </div>
                                         <div class="progress progress-xs mb-3">
-                                            <div class="progress-bar bg-info-500" role="progressbar" style="width: {{$ecolagePaiement}}%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-info-500" role="progressbar" style="width: 12%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         
                                     </div>
                                     <div class="col-md-6 col-lg-6 mr-lg-auto">
                                         <div class="d-flex mt-2 mb-1 text-success" style="letter-spacing:2px;font-weight:bold">
-                                            T M ({{$tmPaiement}}%)
+                                            T M (23%)
                                         </div>
                                         <div class="progress progress-xs mb-3">
-                                            <div class="progress-bar bg-success-200" role="progressbar" style="width: {{$tmPaiement}}%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-success-200" role="progressbar" style="width: 23%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     
                                     
                                         <div class="d-flex mt-2 mb-1 text-secondary" style="letter-spacing:2px;font-weight:bold">
-                                            Participation ({{$participationPaiement}}%)
+                                            Participation (12%)
                                         </div>
                                         <div class="progress progress-xs mb-3">
-                                            <div class="progress-bar bg-secondary-500" role="progressbar" style="width: {{$participationPaiement}}%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-secondary-500" role="progressbar" style="width: 12%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -324,22 +282,22 @@
                 var dataSetPie = [
                 {
                     label:"Droit",
-                    data: {{$droitDetail}},
+                    data: 12334,
                     color: myapp_get_color.warning_200
                 },
                 {
                     label: "Ecolage",
-                    data: {{$ecolageDetail}},
+                    data: 12000,
                     color: myapp_get_color.info_500
                 },
                 {
                     label: "T M Friandise",
-                    data: {{$tm_friandiseDetail}},
+                    data: 12,
                     color: myapp_get_color.success_200
                 },
                 {
                     label: "Participation",
-                    data: {{$participationDetail}},
+                    data: 23444,
                     color: myapp_get_color.secondary
                 }];
 
@@ -577,10 +535,10 @@
                 var flotVisit = $.plot('#flotVisit', [
                 {
                     data: [
-                        [3, {{$friandisePaiement}}],
-                        [4, {{$ecolagePaiement}}],
-                        [5, {{$tmPaiement}}],
-                        [6, {{$participationPaiement}}]
+                        [3, 32455],
+                        [4, 34333],
+                        [5, 3432],
+                        [6, 12334]
                     
                     ],
                     color: myapp_get_color.success_200

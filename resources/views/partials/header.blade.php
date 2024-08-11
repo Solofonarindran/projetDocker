@@ -254,7 +254,7 @@
                 </a>
 
                 <div class="dropdown-divider m-0"></div>
-                <a class="dropdown-item fw-500 pt-3 pb-3" href="{{route('logout')}}">
+                <a class="dropdown-item fw-500 pt-3 pb-3" href="">
                     <span data-i18n="drpdwn.page-logout">Logout</span>
                     @if (Auth()->user())
                         <span class="float-right fw-n">&commat;{{Auth()->user()->email}}</span>

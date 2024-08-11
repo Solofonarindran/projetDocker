@@ -143,7 +143,7 @@
                         </ul>
                         <div class="tab-content p-3">
                             <div class="tab-pane fade active show" id="tab_direction-1" role="tabpanel">
-                                <form action="{{route('postparent')}}" method="post">
+                                <form action="#" method="post">
                                 @csrf
                                   
                                     <div class="form-group">
@@ -193,7 +193,7 @@
                                     </div>
                                     
 
-                                    <form action="{{route('passidparent')}}" method="post">
+                                    <form action="" method="post">
                                         @csrf
                                         <div class="form-group ">
                                             <label for="exampleFormControlInput1">Identifiant: </label>

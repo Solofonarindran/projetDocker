@@ -39,13 +39,13 @@
         </div>
         <ul id="js-nav-menu" class="nav-menu">
             <li>
-                <a href="{{route('dashboard')}}" title="Dashboard" data-filter-tags="tableau bord">
+                <a href="#" title="Dashboard" data-filter-tags="tableau bord">
                     <i class="fas fa-tachometer-alt"></i>
                     <span class="nav-link-text" data-i18n="nav.application_intel">Tableau de Bord</span>
                 </a>
             </li>
             <li>
-                <a href="{{route('classe.show')}}" title="Admin Classe" data-filter-tags="classe">
+                <a href="#" title="Admin Classe" data-filter-tags="classe">
                     <i class="fa fa-graduation-cap"></i>
                     <span class="nav-link-text" data-i18n="nav.theme_settings">Gérance de Classe</span>
                 </a>
@@ -59,13 +59,13 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="{{route('Inscri.ChoixCycle')}}" title="Inscription" data-filter-tags="ui components alerts">
+                        <a href="#" title="Inscription" data-filter-tags="ui components alerts">
                             <span class="nav-link-text"
                                 data-i18n="nav.ui_components_alerts">Inscription</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('reinscri.search')}}" title="Accordions" data-filter-tags="réinscription">
+                        <a href="#" title="Accordions" data-filter-tags="réinscription">
                             <span class="nav-link-text"
                                 data-i18n="nav.ui_components_accordions">Réinscription</span>
                         </a>
@@ -87,14 +87,14 @@
                     </li>
 
                     <li>
-                        <a href="{{route('option')}}" title="Gestion de note"
+                        <a href="#" title="Gestion de note"
                             data-filter-tags="gestion de note">
                             <span class="nav-link-text" data-i18n="nav.utilities_spacing">Gestion des
                                 Notes</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('resultat.option')}}" title="Résultat"
+                        <a href="#" title="Résultat"
                             data-filter-tags="résultats">
                             <span class="nav-link-text"
                                 data-i18n="nav.utilities_typography">Résultats</span>
@@ -109,7 +109,7 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="{{route('operation.list.ins')}}" title="Ecolage"
+                        <a href="#" title="Ecolage"
                             data-filter-tags="ecolage frais scolaire">
                             <span class="nav-link-text" data-i18n="nav.utilities_color_pallet">Frais
                                 Scolaire</span>
@@ -117,7 +117,7 @@
                     </li>
 
                     <li>
-                        <a href="{{route('operation.list.prof')}}" title="Salaire des Profs"
+                        <a href="#" title="Salaire des Profs"
                             data-filter-tags="salariés payement">
                             <span class="nav-link-text" data-i18n="nav.utilities_spacing">Salariés</span>
                         </a>
